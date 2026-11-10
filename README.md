@@ -1,4 +1,4 @@
-# ENGR-315-Project-Iowa-Alcohol-Sales-Analysis
+# Iowa-Alcohol-Sales-Analysis-ENGR-315
 ## Created by: Lucas Colonna, Abby Molloy, and Kevin Kabasele
 
 ## Motivation For This Analysis
@@ -7,7 +7,7 @@
 ### This data was collected through inventory tracking and in-store record-keeping that is reported to the government. The contents of this file are every alcohol purchase that was made sorted by the day it was made, then by county. This information can be used to determine how citizens of Iowa spend their weekends or time celebrating, what they prefer to drink, and how much it costs them to do so. Using this information, we can answer the following questions:
 ### 1. What type of alcohol is the most popular in each region of Iowa and what volume/cost was purchased?
 ### 2. What county spends the most money on alcohol and how does region within the state affect the number of sales?
-### 3. To what degree do celebrations/holdiays affect alcohol sales in Iowa?
+### 3. To what degree do celebrations/holidays affect alcohol sales in Iowa?
 
 ## Implementation Details
 ### Each purchase that was recorded on the csv file contains the date of purchase, location data, sales data, and product information.
