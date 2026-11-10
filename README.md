@@ -25,7 +25,7 @@
 
 
 ## Actions Needed
-### (A step by step process of how to recreate this.
+### A step by step process of how to recreate this.
 
 
 ## References/Source files:
