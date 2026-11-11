@@ -1,7 +1,9 @@
 
+*csv
+
 # Ignore Python virtual environment
 .venv/
 __pycache__/
 
 # Ignore large raw CSV files
-/Data/Raw Data/
+/data/sales_data/
