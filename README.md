@@ -2,10 +2,13 @@
 ## Created by: Lucas Colonna, Abby Molloy, and Kevin Kabasele
 
 ## Motivation For This Analysis
-### The following is an analysis of a dataset containing alcohol purchases in stores with Class E liquor licenses in the state of Iowa. The link to the website containing the research is conducted is: 
+### The following is an analysis of a dataset containing alcohol purchases in stores with Class E liquor licenses in the state of Iowa. The link to the website containing the research is conducted is:
 [State of Iowa - Iowa Liquor Sales, 2021](https://catalog.data.gov/dataset/iowa-liquor-sales-2021?from_hint=eyJxIjoiTGlxdW9yIn0%3D)
 ### This data was collected through inventory tracking and in-store record-keeping that is reported to the government. The contents of this file are every alcohol purchase that was made sorted by the day it was made, then by county. This information can be used to determine how citizens of Iowa spend their weekends or time celebrating, what they prefer to drink, and how much it costs them to do so. Using this information, we can answer the following questions:
 ### 1. What type of alcohol is the most popular in each region of Iowa and what volume/cost was purchased?
+
+
+
 ### 2. What county spends the most money on alcohol and how does region within the state affect the number of sales?
 ### 3. To what degree do celebrations/holidays affect alcohol sales in Iowa?
 
