@@ -49,21 +49,26 @@ for region, counties in regions.items():
 def get_region(county):
    
    county = str(county).upper().strip() # Standardizes data to keep values consistent
-   if county in regions:
-       return regions[county]
+   
+   if county in county_to_region:
+       return county_to_region[county]
    
    return "unknown"
 
-complete_data["region"] = complete_data["county"].apply(get_region)
+complete_data["region"] = complete_data["county_name"].apply(get_region)
+
+print(complete_data[complete_data["region"] == "Unknown"]["county_name"].unique())
+
 
 ### Question 1: What type of alcohol is the most popular in each region of Iowa and what volume/cost was purchased? ###
+
 
 # Puts all rows of the same region and alc type into a group wuhile sum adds the dollars and liters in each group
 
 def sort_type(data):
 
     # totals = data.groupby(["region", "category_name"])["sales_dollars", "sales_liters", "sales_bottles"].sum().reset_index()
-    totals = complete_data.groupby(["region", "category_name"])[[["sales_dollars","sales_liters"]]].sum()
+    totals = complete_data.groupby(["region", "category_name"])[["sales_dollars","sales_liters"]].sum()
     totals = totals.reset_index()
 
     return totals
