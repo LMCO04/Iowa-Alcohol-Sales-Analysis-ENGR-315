@@ -41,7 +41,12 @@ regions = {
 }
 
 # sorts data and checks if couties exist in a region
-def Regions(data):
+county_to_region= {}
+for region, counties in regions.items():
+    for c in counties:
+        county_to_region[c.upper()] = region
+
+def get_region(county):
    
    county = str(county).upper().strip() # Standardizes data to keep values consistent
    if county in regions:
@@ -49,22 +54,36 @@ def Regions(data):
    
    return "unknown"
 
-complete_data["region"] = complete_data["county"].apply()
+complete_data["region"] = complete_data["county"].apply(get_region)
 
 ### Question 1: What type of alcohol is the most popular in each region of Iowa and what volume/cost was purchased? ###
 
 # Puts all rows of the same region and alc type into a group wuhile sum adds the dollars and liters in each group
-totals = df.groupby(["region", "category_name"])[["sales_dollars","sales_liters"]].sum()
-totals = totals.reset_index()
 
 def sort_type(data):
 
-    totals = data.groupby(["region", "category_name"])["sales_dollars", "sales_liters", "sale_bottles"].sum().reset_index()
-  
+    # totals = data.groupby(["region", "category_name"])["sales_dollars", "sales_liters", "sales_bottles"].sum().reset_index()
+    totals = complete_data.groupby(["region", "category_name"])[[["sales_dollars","sales_liters"]]].sum()
+    totals = totals.reset_index()
+
     return totals
 
-def top_volume(total):
+def find_top(totals, column):
     results = []
     for region in totals["region"].unique():
-        print()
+        rows = totals[totals["region"] == region]
+        rows = rows.sort_values(column, ascending = False)
+        top = rows.iloc[0]
+        print(region, "|", top["category_name"], "|", round(top["sales_dollars"], 2), "dollars |", round(top["sales_liters"], 2), "liters")
+        
         return
+
+totals = sort_type(complete_data)
+
+print("Most populat by money")
+find_top(totals, "sales_dollars")
+
+print()
+
+print("Most popular by volume")
+find_top(totals, "sales_liters")
