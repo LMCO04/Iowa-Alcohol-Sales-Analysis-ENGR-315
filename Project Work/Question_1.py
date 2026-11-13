@@ -85,7 +85,7 @@ def find_top(totals, column):
 
 totals = sort_type(complete_data)
 
-print("Most populat by money")
+print("Most popular by money")
 find_top(totals, "sales_dollars")
 
 print()
