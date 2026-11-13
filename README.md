@@ -18,16 +18,27 @@ The third question will focus mostly on the date of the data. A trend line will 
 
 
 ## Results of the Analysis
-Placeholder
+We discovered that the region with the highest alcohol purchases was in the central region of Iowa. Their drink of choice through how the citizens spend their money is Vodka with $21712199.19 spent throughout the year with a volume of 1930560.83 liters.
 
 
 ## Conclusions from the Analysis
-Placeholder
+The result of question one was partially surprising. The central region of Iowa having the most sales revenue was predicted due to it being one of the few majorly Urban regions of the generally rural state. However, what is shocking is the choice of alcohol. We predicted that beer was going to be the most popular due to the cheap cost and high volume per dollar. 
 
 
 ## Actions Needed
-A step by step process of how to recreate this.
-
+All data processed in the programs are completed using a single csv data file. If mutliple are used like in this project, fucntions are used to splice the csv files together.
+(Continue)
 
 ## References/Source files:
 List all the references the group used for the project, including journal & conference papers, GitHub repositories, open-source files, etc.
+
+Stack Overflow: Loop through sub folders in a directory and import specified columns from .CSV files:
+https://stackoverflow.com/questions/48940448/loop-through-sub-folders-in-a-directory-and-import-specified-columns-from-csv-f
+
+Stack Overflow: How to group columns and sum them, in a large CSV?
+https://stackoverflow.com/questions/71034664/how-to-group-columns-and-sum-them-in-a-large-csv
+
+## Progress Report
+11/12 
+Currently the team is individually working on each of the three questions. Each memebr is practicing mutliple different strategies on how to splice together the csv files as well as sort them into regions.
+Currently question 1 is complete by removing the headers and joining the csv files togther in the program. Then they are manually assigning each county to a region to answer the question. The answer to question 1 is in the "Results of the Analysis" portion of the README and the conclusions section was also updated accrodingly.
