@@ -20,14 +20,22 @@ The third question will focus mostly on the date of the data. A trend line will 
 ## Results of the Analysis
 We discovered that the region with the highest alcohol purchases was in the central region of Iowa. Their drink of choice through how the citizens spend their money is Vodka with $21712199.19 spent throughout the year with a volume of 1930560.83 liters.
 
+Question 2: Our results showed that Polk County had the highest liquor sales in Iowa, with a total of approximately $99.03 million in 2021.When comparing the five regions, Central Iowa had the highest total liquor sales at approximately $151.92 million, followed by Northeast Iowa at $115.70 million and Southeast Iowa at $84.20 million. Northwest Iowa had approximately $49.23 million, while Southwest Iowa had the lowest total at $27.02 million. We also compared average sales per county to account for the different numbers of counties in each region. Central Iowa had the highest average at approximately $9.50 million per county, while Southwest Iowa had the lowest at approximately $1.69 million per county.
+
+<img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/97b292bc-ead6-44ec-a6b0-3b25c84b22c2" />
+
+
 
 ## Conclusions from the Analysis
 The result of question one was partially surprising. The central region of Iowa having the most sales revenue was predicted due to it being one of the few majorly Urban regions of the generally rural state. However, what is shocking is the choice of alcohol. We predicted that beer was going to be the most popular due to the cheap cost and high volume per dollar. 
 
+Question 2: Based on our results, liquor sales were not evenly distributed across Iowa in 2021. Central Iowa had the highest total sales and average sales per county, while Southwest Iowa had the lowest in both categories. One possible reason for these differences is that some regions contain larger cities and more retailers. For example, Polk County is located in Central Iowa and accounts for a large portion of that region's sales. However, our current analysis does not determine whether population size or retailer concentration explains these differences.
 
 ## Actions Needed
 All data processed in the programs are completed using a single csv data file. If mutliple are used like in this project, fucntions are used to splice the csv files together.
 (Continue)
+
+Question 2: We plan to further investigate regional differences and consider statistical testing to determine whether the differences are significant. 
 
 ## References/Source files:
 List all the references the group used for the project, including journal & conference papers, GitHub repositories, open-source files, etc.
