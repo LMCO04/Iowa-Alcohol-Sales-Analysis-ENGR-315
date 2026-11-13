@@ -15,10 +15,11 @@ Each purchase that was recorded on the csv file contains the date of purchase, l
 For the first question the location data and product information will be summed up for each county in Iowa. Then, each country will be sorted and talleyed into urban, suburban, or rural.
 For the second question. We will use the data from question 1 and find the county and region type to determine how much money was spent and what region type spends the most.
 The third question will focus mostly on the date of the data. A trend line will be created based on increase in sales per day across the entire year. Times of the year will be sorted by their holiday season associated (i.e. Christmas season in December and graduation season in June).
+Considering that there are no official "regions" of Iowa, our team grouped them by location on the map. The closest map
 
 
 ## Results of the Analysis
-We discovered that the region with the highest alcohol purchases was in the central region of Iowa. Their drink of choice through how the citizens spend their money is Vodka with $21712199.19 spent throughout the year with a volume of 1930560.83 liters.
+Question 1: We discovered that the region with the highest alcohol purchases was in the central region of Iowa. Their drink of choice through how the citizens spend their money is Vodka with $21712199.19 spent throughout the year. The most popular drink by volume is also vodka, with a volume of 1930560.83 liters. 
 
 Question 2: Our results showed that Polk County had the highest liquor sales in Iowa, with a total of approximately $99.03 million in 2021. When comparing the five regions, Central Iowa had the highest total liquor sales at approximately $151.92 million, followed by Northeast Iowa at $115.70 million and Southeast Iowa at $84.20 million. Northwest Iowa had approximately $49.23 million, while Southwest Iowa had the lowest total at $27.02 million. We also compared average sales per county to account for the different numbers of counties in each region. Central Iowa had the highest average at approximately $9.50 million per county, while Southwest Iowa had the lowest at approximately $1.69 million per county.
 
