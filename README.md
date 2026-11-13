@@ -22,12 +22,19 @@ We discovered that the region with the highest alcohol purchases was in the cent
 
 Question 2: Our results showed that Polk County had the highest liquor sales in Iowa, with a total of approximately $99.03 million in 2021. When comparing the five regions, Central Iowa had the highest total liquor sales at approximately $151.92 million, followed by Northeast Iowa at $115.70 million and Southeast Iowa at $84.20 million. Northwest Iowa had approximately $49.23 million, while Southwest Iowa had the lowest total at $27.02 million. We also compared average sales per county to account for the different numbers of counties in each region. Central Iowa had the highest average at approximately $9.50 million per county, while Southwest Iowa had the lowest at approximately $1.69 million per county.
 
-Command-line output: 
-<img width="706" height="659" alt="image" src="https://github.com/user-attachments/assets/87263235-0de5-49cb-ba3c-ffa4303b148e" />
 
-Graph: 
+### Command-line Output
 
-<img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/97b292bc-ead6-44ec-a6b0-3b25c84b22c2" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/87263235-0de5-49cb-ba3c-ffa4303b148e" width="550" alt="Question 2 command-line results">
+</p>
+
+### Graph
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/97b292bc-ead6-44ec-a6b0-3b25c84b22c2" width="500" alt="Average county liquor sales by region">
+</p>
+
 
 
 
