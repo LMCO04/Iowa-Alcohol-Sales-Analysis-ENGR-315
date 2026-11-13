@@ -49,4 +49,4 @@ https://stackoverflow.com/questions/71034664/how-to-group-columns-and-sum-them-i
 ## Progress Report
 11/12 
 Currently the team is individually working on each of the three questions. Each memebr is practicing mutliple different strategies on how to splice together the csv files as well as sort them into regions.
-Currently question 1 is complete by removing the headers and joining the csv files togther in the program. Then they are manually assigning each county to a region to answer the question. The answer to question 1 is in the "Results of the Analysis" portion of the README and the conclusions section was also updated accrodingly.
+Currently question 1 is complete by removing the headers and joining the csv files togther in the program. Then they are manually assigning each county to a region to answer the question. The answer to question 1 is in the "Results of the Analysis" portion of the README and the conclusions section was also updated accordingly.
