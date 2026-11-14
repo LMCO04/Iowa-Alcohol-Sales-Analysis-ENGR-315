@@ -7,16 +7,41 @@ The following is an analysis of a dataset containing alcohol purchases in stores
  This data was collected through inventory tracking and in-store record-keeping that is reported to the government. The contents of this file are every alcohol purchase that was made sorted by the day it was made, then by county. This information can be used to determine how citizens of Iowa spend their weekends or time celebrating, what they prefer to drink, and how much it costs them to do so. Using this information, we can answer the following questions:
 
 ### 1. What type of alcohol is the most popular in each region of Iowa and what volume/cost was purchased?
-### 2. What county spends the most money on alcohol and how does region within the state affect the number of sales?
+### 2. What county spends the most money on alcohol and how does the region within the state affect the number of sales?
 ### 3. To what degree do celebrations/holidays affect alcohol sales in Iowa?
 
 ## Implementation Details
 Each purchase that was recorded on the csv file contains the date of purchase, location data, sales data, and product information.
-For the first question the location data and product information will be summed up for each county in Iowa. Then, each country will be sorted and talleyed into urban, suburban, or rural.
+For the first question the location data and product information will be summed up for each county in Iowa. 
 For the second question. We will use the data from question 1 and find the county and region type to determine how much money was spent and what region type spends the most.
 The third question will focus mostly on the date of the data. A trend line will be created based on increase in sales per day across the entire year. Times of the year will be sorted by their holiday season associated (i.e. Christmas season in December and graduation season in June).
-Considering that there are no official "regions" of Iowa, our team grouped them by location on the map. The closest map
+Considering that there are no official "regions" of Iowa, our team grouped them by location on the map. The regions and counties are as organized as follows:
+   
+    regions = {
+    "Northwest": ["Lyon", "Osceola", "Dickinson", "Emmet", "Sioux", "O'Brien", "Clay",
+                  "Palo Alto", "Plymouth", "Cherokee", "Buena Vista", "Pocahontas",
+                  "Humboldt", "Woodbury", "Ida", "Sac", "Calhoun", "Webster",
+                  "Monona", "Crawford", "Carroll"],
+                  
+    "Northeast": ["Winnebago", "Worth", "Mitchell", "Howard", "Winneshiek", "Allamakee",
+                  "Hancock", "Cerro Gordo", "Floyd", "Chickasaw", "Kossuth", "Wright",
+                  "Franklin", "Butler", "Bremer", "Fayette", "Clayton", "Black Hawk",
+                  "Buchanan", "Delaware", "Dubuque", "Grundy", "Benton", "Linn",
+                  "Jones", "Jackson", "Clinton"],
 
+    "Central":   ["Greene", "Boone", "Story", "Hamilton", "Hardin", "Marshall", "Tama",
+                  "Poweshiek", "Dallas", "Polk", "Jasper", "Guthrie", "Madison",
+                  "Warren", "Marion", "Mahaska"],
+
+    "Southwest": ["Harrison", "Shelby", "Audubon", "Pottawattamie", "Cass", "Adair",
+                  "Mills", "Montgomery", "Adams", "Fremont", "Page", "Taylor",
+                  "Ringgold", "Union", "Clarke", "Decatur"],
+
+    "Southeast": ["Lucas", "Wayne", "Appanoose", "Monroe", "Wapello", "Davis",
+                  "Van Buren", "Jefferson", "Keokuk", "Washington", "Henry",
+                  "Des Moines", "Lee", "Louisa", "Muscatine", "Scott", "Johnson",
+                  "Iowa", "Cedar"],
+                  }
 
 ## Results of the Analysis
 Question 1: We discovered that the region with the highest alcohol purchases was in the central region of Iowa. Their drink of choice through how the citizens spend their money is Vodka with $21712199.19 spent throughout the year. The most popular drink by volume is also vodka, with a volume of 1930560.83 liters. 
@@ -36,13 +61,12 @@ Question 2: Our results showed that Polk County had the highest liquor sales in 
 </p>
 
 ## Conclusions from the Analysis
-The result of question one was partially surprising. The central region of Iowa having the most sales revenue was predicted due to it being one of the few majorly Urban regions of the generally rural state. However, what is shocking is the choice of alcohol. We predicted that beer was going to be the most popular due to the cheap cost and high volume per dollar. 
+The result of question 1 was partially surprising. The central region of Iowa having the most sales revenue was predicted due to it being one of the few majorly Urban regions of the generally rural state. However, what is shocking is the choice of alcohol. We predicted that beer was going to be the most popular due to the cheap cost and high volume per dollar. 
 
 Question 2: Based on our results, liquor sales were not evenly distributed across Iowa in 2021. Central Iowa had the highest total sales and average sales per county, while Southwest Iowa had the lowest in both categories. One possible reason for these differences is that some regions contain larger cities and more retailers. For example, Polk County is located in Central Iowa and accounts for a large portion of that region's sales. However, our current analysis does not determine whether population size or retailer concentration explains these differences.
 
 ## Actions Needed
-All data processed in the programs are completed using a single csv data file. If mutliple are used like in this project, fucntions are used to splice the csv files together.
-(Continue)
+All data processed in the programs are completed using a single csv data file. If multiple files are used like in this project, functions are used to splice the csv files together. For question 1: the regions of Iowa are arbitrarily specified by our team and manually input into arrays (see format above). 
 
 Question 2: We plan to further investigate regional differences and consider statistical testing to determine whether the differences are significant. 
 
@@ -55,9 +79,13 @@ https://stackoverflow.com/questions/48940448/loop-through-sub-folders-in-a-direc
 Stack Overflow: How to group columns and sum them, in a large CSV?
 https://stackoverflow.com/questions/71034664/how-to-group-columns-and-sum-them-in-a-large-csv
 
+Stack Overflow: How to compare (diff) two large CSV files where order does not matter
+https://stackoverflow.com/questions/76994702/how-to-compare-diff-two-large-csv-files-where-order-does-not-matter
+
 ## Progress Report
-11/12 
+11/13
 Currently the team is individually working on each of the three questions. Each memebr is practicing mutliple different strategies on how to splice together the csv files as well as sort them into regions.
 Currently question 1 is complete by removing the headers and joining the csv files togther in the program. Then they are manually assigning each county to a region to answer the question. The answer to question 1 is in the "Results of the Analysis" portion of the README and the conclusions section was also updated accordingly.
+Going forward, we aim to finalize and check each question, finish question 3, and reorganize the repository files to be more consistent across questions as well as reduce clutter when navigating through the repository.
 
 The answer to question 2 was updated in Results, Conclusion, and action needed. 
